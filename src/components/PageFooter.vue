@@ -21,7 +21,11 @@
       </div>
       <div class="col-sm-3 col-xs-12 q-mb-lg">
         <div class="text-h6 text-uppercase q-mb-md">Subscribe</div>
-        <q-input outlined placeholder="Email Address"></q-input>
+        <q-input outlined placeholder="Email Address" dense>
+          <template v-slot:append>
+            <q-btn unelevated color="primary" class="submit-button">Submit</q-btn>
+          </template>
+        </q-input>
         <div class="q-gutter-md q-mt-lg">
           <q-icon name="mdi-facebook" size="sm"></q-icon>
           <q-icon name="mdi-instagram" size="sm"></q-icon>
@@ -32,3 +36,10 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.submit-button {
+  height: 40px;
+  position: relative;
+  left: 11px;
+}
+</style>
