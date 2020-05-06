@@ -8,7 +8,14 @@
         >QLayout allows you to configure your views as a 3x3 matrix, containing an optional Header and/or Footer (mostly used for navbar, but can be anything). If you haven’t already,</div>
         <div class="q-my-lg row">
           <div class="col-sm-4 col-xs-12">
-            <q-btn color="primary" size="xl">Show me how</q-btn>
+            <transition
+              appear
+              enter-active-class="animated fadeIn"
+              leave-active-class="animated fadeOut"
+            >
+              <!-- Wrapping only one DOM element, defined by QBtn -->
+               <q-btn color="primary" size="xl">Show me how</q-btn>
+            </transition>
           </div>
           <div class="col-sm-6 col-xs-12" style="align-self: center;">Get a free demo</div>
         </div>
